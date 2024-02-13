@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0px;
+  padding: 0%;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Open sans";
+}
+
+@media screen and (max-width: 1440px) {
+  body header .head-Conatiner {
+    height: 84px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+  }
+  body header .head-Conatiner .logo-Image {
+    padding: 8px 0px 8px 139px;
+  }
+  body header .nav-Conatiner {
+    display: flex;
+    font-size: 20px;
+    padding-right: 149px;
+    padding-top: 29px;
+  }
+  body header .nav-Conatiner ul {
+    display: flex;
+    list-style-type: none;
+  }
+  body header .nav-Conatiner li {
+    text-align: left;
+    font: normal normal normal 20px/27px Open Sans;
+    font-size: 20px;
+    color: #707070;
+    padding-right: 10px;
+  }
+  body header .nav-Conatiner p {
+    padding-right: 15px;
+    font: normal normal 600 20px/27px Open Sans;
+  }
+  body .top-Image-Container .top-Image {
+    height: 922px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: -webkit-fill-available;
+  }
+  body .descrip-Container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    height: 290px;
+    padding: 0px 137px 0px 137px;
+    width: -webkit-fill-available;
+  }
+  body .descrip-Container .getInShapeNow-Container {
+    width: 388.6px;
+    background: #d63d2d;
+    opacity: 1;
+    height: 290px;
+  }
+  body .descrip-Container .getInShapeNow-Container :first-child {
+    margin-top: 83px;
+    margin-bottom: 29px;
+    text-align: center;
+    font: normal normal bold 20px/27px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 1;
+    white-space: nowrap;
+  }
+  body .descrip-Container .getInShapeNow-Container :last-child {
+    margin-top: 29px;
+    margin-left: 59px;
+    margin-right: 59px;
+    margin-bottom: 76.61px;
+    text-align: center;
+    font: normal normal normal 14px/15px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  body .descrip-Container .destinationForSports-Container {
+    width: 388.6px;
+    height: 290px;
+    background: #292929 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  body .descrip-Container .destinationForSports-Container :first-child {
+    margin-top: 83px;
+    margin-bottom: 29px;
+    text-align: center;
+    font: normal normal bold 20px/27px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 1;
+    white-space: nowrap;
+  }
+  body .descrip-Container .destinationForSports-Container :last-child {
+    margin-top: 29px;
+    margin-left: 59px;
+    margin-right: 59px;
+    margin-bottom: 76.61px;
+    text-align: center;
+    font: normal normal normal 14px/15px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  body .descrip-Container .freeNutritionPlans-Container {
+    width: 388.6px;
+    height: 290px;
+    background: #3c3c3c 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  body .descrip-Container .freeNutritionPlans-Container :first-child {
+    margin-top: 83px;
+    margin-bottom: 29px;
+    text-align: center;
+    font: normal normal bold 20px/27px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 1;
+    white-space: nowrap;
+  }
+  body .descrip-Container .freeNutritionPlans-Container :last-child {
+    margin-top: 29px;
+    margin-left: 59px;
+    margin-right: 59px;
+    margin-bottom: 76.61px;
+    text-align: center;
+    font: normal normal normal 14px/15px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  body .gold-Gym-Container {
+    position: relative;
+    padding-top: 63.39px;
+  }
+  body .gold-Gym-Container .gold-Gym-Image {
+    height: 600px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: -webkit-fill-available;
+    background: transparent url("img/2b0l0zj6.png") 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+  }
+  body .gold-Gym-Container .gold-Gym-Sentence {
+    position: absolute;
+    top: 50%;
+  }
+  body .gold-Gym-Container .gold-Gym-Sentence :first-child {
+    text-align: center;
+    font: normal normal bold 50px/68px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  body .gold-Gym-Container .gold-Gym-Sentence :last-child {
+    padding: 0px 220px;
+    text-align: center;
+    font: normal normal normal 15px/24px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  body .calsses-To-Take-Container {
+    text-align: center;
+    padding: 79px;
+  }
+  body .calsses-To-Take-Container :first-child {
+    padding: 0px 140px;
+    text-align: center;
+    font: normal normal bold 50px/68px Open Sans;
+    letter-spacing: 0px;
+    color: #333333;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  body .calsses-To-Take-Container :nth-child(2) {
+    padding: 29px 260px 0px;
+  }
+  body .classes-List-Container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    gap: 0;
+  }
+  body .classes-List-Container img {
+    background: transparent url("img/hero-3-705x338.png") 0% 0% no-repeat padding-box;
+    border: 10px solid #000000;
+    opacity: 1;
+    width: 480px;
+  }
+  body .classes-List-Container .list-Cont {
+    position: relative;
+  }
+  body .classes-List-Container .list-Cont :last-child {
+    position: absolute;
+    width: 480px;
+    top: 50%;
+    text-align: center;
+    font: normal normal bold 30px/35px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  footer {
+    background: #191919 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 90px;
+    padding-top: 31px;
+  }
+  footer p {
+    text-align: center;
+    font: normal normal normal 20px/27px Open Sans;
+    letter-spacing: 0px;
+    color: #7c7575;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=stylr.css.map */
