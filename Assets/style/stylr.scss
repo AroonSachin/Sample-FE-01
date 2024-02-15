@@ -6,19 +6,135 @@
   box-sizing: border-box;
   font-family: "Open sans";
 }
+:root {
+  --320Width: 1334px;
+  --425Width: 1362px;
+  --listimagesizeadd: 28px;
+  // --320PxDescriptionWidth: 503px;
+}
 
-@media screen and (max-width: 1440px) {
-  body {
-    header {
-      .head-Conatiner {
-        height: 84px;
-        background-color: #ffffff;
-        display: flex;
-        justify-content: space-between;
-        .logo-Image {
-          padding: 8px 0px 8px 139px;
-        }
+body {
+  @media only screen and (max-width: 370px) {
+    .logo-Image {
+      padding: 8px 0px 8px 70px;
+    }
+    .nav-Conatiner {
+      margin-left: 400px;
+    }
+    .top-Image {
+      width: var(--320Width);
+    }
+    .descrip-Container {
+      display: flex;
+      width: var(--320Width);
+    }
+    .getInShapeNow-Container {
+      flex: 50%;
+    }
+    .destinationForSports-Container {
+      flex: 50%;
+    }
+    .freeNutritionPlans-Container {
+      flex: 50%;
+    }
+    .gold-Gym-Image {
+      width: var(--320Width);
+    }
+    .gold-Gym-Container {
+      width: fit-content;
+    }
+    .calsses-To-Take-Container {
+      width: var(--320Width);
+    }
+    .classes-List-Container {
+      img {
+        width: 427px;
       }
+    }
+    footer {
+      width: 1280px;
+    }
+  }
+
+  @media only screen and (min-width: 370px) and (max-width: 1379px) {
+    .logo-Image {
+      padding: 8px 0px 8px 70px;
+    }
+    .nav-Conatiner {
+      margin-left: 400px;
+    }
+    .top-Image {
+      width: var(--425Width);
+    }
+    .descrip-Container {
+      display: flex;
+      width: var(--425Width);
+    }
+    .getInShapeNow-Container {
+      flex: 50%;
+    }
+    .destinationForSports-Container {
+      flex: 50%;
+    }
+    .freeNutritionPlans-Container {
+      flex: 50%;
+    }
+    .gold-Gym-Image {
+      width: var(--425Width);
+    }
+    .gold-Gym-Container {
+      width: fit-content;
+    }
+    .calsses-To-Take-Container {
+      width: var(--425Width);
+    }
+    .classes-List-Container {
+      img {
+        width: calc(427px + var(--listimagesizeadd));
+      }
+    }
+    footer {
+      width: calc(1334px + var(--listimagesizeadd));
+    }
+  }
+
+  @media screen and (min-width: 1379px) and (max-width: 1440px) {
+    .logo-Image {
+      padding: 8px 0px 8px 139px;
+    }
+    .top-Image {
+      width: -webkit-fill-available;
+    }
+    .descrip-Container {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      width: -webkit-fill-available;
+    }
+    .getInShapeNow-Container {
+      width: 388.6px;
+    }
+    .destinationForSports-Container {
+      width: 388.6px;
+    }
+    .freeNutritionPlans-Container {
+      width: 388.6px;
+    }
+    .gold-Gym-Image {
+      width: -webkit-fill-available;
+    }
+    .classes-List-Container {
+      img {
+        width: 480px;
+      }
+    }
+  }
+
+  header {
+    .head-Conatiner {
+      height: 84px;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
       .nav-Conatiner {
         display: flex;
         font-size: 20px;
@@ -41,191 +157,182 @@
         }
       }
     }
-    .top-Image-Container {
-      .top-Image {
-        height: 922px;
-        object-fit: cover;
-        width: -webkit-fill-available;
-      }
+  }
+  .top-Image-Container {
+    .top-Image {
+      height: 922px;
+      object-fit: cover;
     }
-    .descrip-Container {
-      display: inline-grid;
-      grid-template-columns: auto auto auto;
+  }
+  .descrip-Container {
+    height: 290px;
+    padding: 0px 137px 0px 137px;
+    .getInShapeNow-Container {
+      background: #d63d2d;
+      opacity: 1;
       height: 290px;
-      padding: 0px 137px 0px 137px;
-      width: -webkit-fill-available;
-      .getInShapeNow-Container {
-        width: 388.6px;
-        background: #d63d2d;
-        opacity: 1;
-        height: 290px;
-        :first-child {
-          margin-top: 83px;
-          margin-bottom: 29px;
-          text-align: center;
-          font: normal normal bold 20px/27px Open Sans;
-          letter-spacing: 0px;
-          color: #ffffff;
-          text-transform: uppercase;
-          opacity: 1;
-          white-space: nowrap;
-        }
-        :last-child {
-          margin-top: 29px;
-          margin-left: 59px;
-          margin-right: 59px;
-          margin-bottom: 76.61px;
-          text-align: center;
-          font: normal normal normal 14px/15px Open Sans;
-          letter-spacing: 0px;
-          color: #ffffff;
-          opacity: 1;
-        }
-      }
-      .destinationForSports-Container {
-        width: 388.6px;
-        height: 290px;
-        background: #292929 0% 0% no-repeat padding-box;
-        opacity: 1;
-        :first-child {
-          margin-top: 83px;
-          margin-bottom: 29px;
-          text-align: center;
-          font: normal normal bold 20px/27px Open Sans;
-          letter-spacing: 0px;
-          color: #ffffff;
-          text-transform: uppercase;
-          opacity: 1;
-          white-space: nowrap;
-        }
-        :last-child {
-          margin-top: 29px;
-          margin-left: 59px;
-          margin-right: 59px;
-          margin-bottom: 76.61px;
-          text-align: center;
-          font: normal normal normal 14px/15px Open Sans;
-          letter-spacing: 0px;
-          color: #ffffff;
-          opacity: 1;
-        }
-      }
-      .freeNutritionPlans-Container {
-        width: 388.6px;
-        height: 290px;
-        background: #3c3c3c 0% 0% no-repeat padding-box;
-        opacity: 1;
-        :first-child {
-          margin-top: 83px;
-          margin-bottom: 29px;
-          text-align: center;
-          font: normal normal bold 20px/27px Open Sans;
-          letter-spacing: 0px;
-          color: #ffffff;
-          text-transform: uppercase;
-          opacity: 1;
-          white-space: nowrap;
-        }
-        :last-child {
-          margin-top: 29px;
-          margin-left: 59px;
-          margin-right: 59px;
-          margin-bottom: 76.61px;
-          text-align: center;
-          font: normal normal normal 14px/15px Open Sans;
-          letter-spacing: 0px;
-          color: #ffffff;
-          opacity: 1;
-        }
-      }
-    }
-    .gold-Gym-Container {
-      position: relative;
-      padding-top: 63.39px;
-      .gold-Gym-Image {
-        height: 600px;
-        object-fit: cover;
-        width: -webkit-fill-available;
-        background: transparent url("img/2b0l0zj6.png") 0% 0% no-repeat
-          padding-box;
-        border: 1px solid #707070;
-        opacity: 1;
-      }
-      .gold-Gym-Sentence {
-        position: absolute;
-        top: 50%;
-        :first-child {
-          text-align: center;
-          font: normal normal bold 50px/68px Open Sans;
-          letter-spacing: 0px;
-          color: #ffffff;
-          text-transform: uppercase;
-          opacity: 1;
-        }
-        :last-child {
-          padding: 0px 220px;
-          text-align: center;
-          font: normal normal normal 15px/24px Open Sans;
-          letter-spacing: 0px;
-          color: #ffffff;
-          opacity: 1;
-        }
-      }
-    }
-    .calsses-To-Take-Container {
-      text-align: center;
-      padding: 79px;
       :first-child {
-        padding: 0px 140px;
+        margin-top: 83px;
+        margin-bottom: 29px;
         text-align: center;
-        font: normal normal bold 50px/68px Open Sans;
+        font: normal normal bold 20px/27px Open Sans;
         letter-spacing: 0px;
-        color: #333333;
+        color: #ffffff;
         text-transform: uppercase;
         opacity: 1;
+        white-space: nowrap;
       }
-      :nth-child(2) {
-        padding: 29px 260px 0px;
+      :last-child {
+        margin-top: 29px;
+        margin-left: 59px;
+        margin-right: 59px;
+        margin-bottom: 76.61px;
+        text-align: center;
+        font: normal normal normal 14px/15px Open Sans;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
       }
     }
-    .classes-List-Container {
-      display: inline-grid;
-      grid-template-columns: auto auto auto;
-      gap: 0;
-      img {
-        background: transparent url("img/hero-3-705x338.png") 0% 0% no-repeat
-          padding-box;
-        border: 10px solid #000000;
+    .destinationForSports-Container {
+      height: 290px;
+      background: #292929 0% 0% no-repeat padding-box;
+      opacity: 1;
+      :first-child {
+        margin-top: 83px;
+        margin-bottom: 29px;
+        text-align: center;
+        font: normal normal bold 20px/27px Open Sans;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-transform: uppercase;
         opacity: 1;
-        width: 480px;
+        white-space: nowrap;
       }
-      .list-Cont {
-        position: relative;
-        :last-child {
-          position: absolute;
-          width: 480px;
-          top: 50%;
-          text-align: center;
-          font: normal normal bold 30px/35px Open Sans;
-          letter-spacing: 0px;
-          color: #ffffff;
-          text-transform: uppercase;
-          opacity: 1;
-        }
+      :last-child {
+        margin-top: 29px;
+        margin-left: 59px;
+        margin-right: 59px;
+        margin-bottom: 76.61px;
+        text-align: center;
+        font: normal normal normal 14px/15px Open Sans;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+      }
+    }
+    .freeNutritionPlans-Container {
+      height: 290px;
+      background: #3c3c3c 0% 0% no-repeat padding-box;
+      opacity: 1;
+      :first-child {
+        margin-top: 83px;
+        margin-bottom: 29px;
+        text-align: center;
+        font: normal normal bold 20px/27px Open Sans;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-transform: uppercase;
+        opacity: 1;
+        white-space: nowrap;
+      }
+      :last-child {
+        margin-top: 29px;
+        margin-left: 59px;
+        margin-right: 59px;
+        margin-bottom: 76.61px;
+        text-align: center;
+        font: normal normal normal 14px/15px Open Sans;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
       }
     }
   }
-  footer {
-    background: #191919 0% 0% no-repeat padding-box;
-    opacity: 1;
-    height: 90px;
-    padding-top: 31px;
-    p {
-      text-align: center;
-      font: normal normal normal 20px/27px Open Sans;
-      letter-spacing: 0px;
-      color: #7c7575;
+  .gold-Gym-Container {
+    position: relative;
+    padding-top: 63.39px;
+    .gold-Gym-Image {
+      height: 600px;
+      object-fit: cover;
+      background: transparent url("img/2b0l0zj6.png") 0% 0% no-repeat
+        padding-box;
+      border: 1px solid #707070;
       opacity: 1;
     }
+    .gold-Gym-Sentence {
+      position: absolute;
+      top: 50%;
+      :first-child {
+        text-align: center;
+        font: normal normal bold 50px/68px Open Sans;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-transform: uppercase;
+        opacity: 1;
+      }
+      :last-child {
+        padding: 0px 220px;
+        text-align: center;
+        font: normal normal normal 15px/24px Open Sans;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+      }
+    }
+  }
+  .calsses-To-Take-Container {
+    text-align: center;
+    margin-top: 79px;
+    :first-child {
+      text-align: center;
+      font: normal normal bold 50px/68px Open Sans;
+      letter-spacing: 0px;
+      color: #333333;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+    :nth-child(2) {
+      padding: 29px 260px 0px;
+    }
+  }
+  .classes-List-Container {
+    margin-top: 79px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    gap: 0;
+    img {
+      background: transparent url("img/hero-3-705x338.png") 0% 0% no-repeat
+        padding-box;
+      border: 10px solid #000000;
+      opacity: 1;
+    }
+    .list-Cont {
+      position: relative;
+      :last-child {
+        position: absolute;
+        width: 480px;
+        top: 50%;
+        text-align: center;
+        font: normal normal bold 30px/35px Open Sans;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-transform: uppercase;
+        opacity: 1;
+      }
+    }
+  }
+}
+footer {
+  background: #191919 0% 0% no-repeat padding-box;
+  opacity: 1;
+  height: 90px;
+  padding-top: 31px;
+  p {
+    text-align: center;
+    font: normal normal normal 20px/27px Open Sans;
+    letter-spacing: 0px;
+    color: #7c7575;
+    opacity: 1;
   }
 }
